@@ -1,0 +1,283 @@
+/* ============================================================
+   1. STYLE GLOBAL & TYPOGRAPHIE
+   ============================================================ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* ============================================================
+   2. EN-TÊTE (HEADER)
+   ============================================================ */
+header {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 40px;
+}
+
+header img {
+    width: 220px;
+}
+
+header h3 {
+    margin: 5px 0 0 0;
+    color: #ff0000; 
+    font-size: 20px;
+}
+
+/* ============================================================
+   3. BANNIÈRE
+   ============================================================ */
+#banniere {
+    width: 100%;
+    height: 300px;
+    background-image: url("Banniere.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ============================================================
+   4. NAVIGATION
+   ============================================================ */
+nav {
+    border-top: 2px solid #3fa9f5;
+    border-bottom: 2px solid #3fa9f5;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   5. STRUCTURE PRINCIPALE (SECTION & ARTICLES)
+   ============================================================ */
+section {
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin: 30px auto;
+    align-items: flex-start;
+}
+
+.main-content {
+    width: 65%;
+}
+
+article {
+    margin-bottom: 5px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+article h1 {
+    margin-top: 0px;
+    color: #000000; 
+    font-size: 2.2rem;
+    margin-bottom: 0px;
+}
+
+article h2 {
+    color: #000000; 
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+article img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    width: 220px;
+    height: auto;
+}
+
+article p {
+    text-align: justify; 
+    line-height: 1.6;    
+    hyphens: auto;     
+}
+
+/* ============================================================
+   6. ASIDE 
+   ============================================================ */
+
+aside {
+    width: 350px;         
+    margin-top: 70px;
+    background-color: #e9ecef; 
+    padding: 25px;
+    
+    border: 1px solid #ddd;  
+    border-left: 10px solid #3fa9f5; 
+    border-radius: 12px;   
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px;
+    height: fit-content;   
+}
+
+
+aside h2 {
+    color: #002d58;       
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+
+aside p {
+	text-align: justify; 
+    color: #0056b3;  
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify; 
+}	
+
+
+.social-icons {
+    display: flex;
+    flex-direction: row;     
+    justify-content: center;
+    gap: 20px;               
+    width: 100%;
+}
+
+.social-icons img {
+    width: 40px;           
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/* ============================================================
+   7. TABLEAUX & LISTES
+   ============================================================ */
+.table-formation {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid #000000; 
+}
+
+.table-formation th, .table-formation td {
+    border: 1px solid #000000; 
+    padding: 12px;
+    text-align: center;
+}
+
+.table-formation th {
+    background-color: #f2dede;
+    color: #000000; 
+    font-weight: bold;
+}
+
+.table-formation tr {
+    background-color: #f2dede; 
+    color: #000000;  
+}
+
+/* ============================================================
+   8. PIED DE PAGE (FOOTER)
+   ============================================================ */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: #f4f4f4;
+    border-top: 3px solid #0072bc;
+}
+
+footer > div {
+    width: 23%;
+}
+
+footer h3 {
+    color: #0072bc;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+.contact-container {
+    display: flex;
+    gap: 60px;         
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.contact-info, .contact-form-box {
+    flex: 1;
+}
+
+.contact-info p {
+    margin-top: 0;        
+    margin-bottom: 10px;  
+    line-height: 1.2;     
+}
+
+
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #d1d1d1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+	
